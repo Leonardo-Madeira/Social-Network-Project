@@ -19,13 +19,10 @@
 			}else{
 				die('Não existe essa página!');
 			}
-
 		}
 		public function run(){
 			$this->setApp();
 			$this->controller->index();
-		}
-		
+		}	
 	}
-
 ?>
