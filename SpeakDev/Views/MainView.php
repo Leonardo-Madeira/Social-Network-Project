@@ -1,5 +1,4 @@
 <?php
-
   namespace SpeakDev\Views;
 
   class MainView{
@@ -7,5 +6,4 @@
       include('pages/'.$filename.'.php');
     }
   }
-
 ?>
