@@ -11,21 +11,16 @@
 			}else{
 				$loadName.=ucfirst(strtolower($url[0]));
 			}
-
 			$loadName.='Controller';
-
 			if(file_exists($loadName.'.php')){
 				$this->controller = new $loadName();
 			}else{
 				die('Não existe essa página!');
 			}
-
 		}
 		public function run(){
 			$this->setApp();
 			$this->controller->index();
 		}
-		
 	}
-
 ?>
