@@ -12,7 +12,7 @@ class MySql{
           self::$pdo->setAttribute(\PDO::ATTR_ERRMODE,\PDO::ERRMODE_EXCEPTION);
           }catch(Exception $e){
             echo 'erro ao conectar';
-            erro_log($e->getMessage());
+            error_log($e->getMessage());
           }
         }
         return self::$pdo;
