@@ -2,6 +2,8 @@
 
 namespace SpeakDev;
 
+use Exception;
+
 class MySql{
   private static $pdo;
 
